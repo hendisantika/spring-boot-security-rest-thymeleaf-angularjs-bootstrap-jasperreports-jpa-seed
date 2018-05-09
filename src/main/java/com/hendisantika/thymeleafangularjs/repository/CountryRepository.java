@@ -16,5 +16,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
  */
 @RepositoryRestResource(collectionResourceRel = "all", path = "country")
 public interface CountryRepository extends CrudRepository<Country, String> {
+    Country findByName(String countryName);
 
 }
