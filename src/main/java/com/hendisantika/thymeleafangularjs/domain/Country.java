@@ -1,11 +1,6 @@
 package com.hendisantika.thymeleafangularjs.domain;
 
-import org.springframework.data.annotation.Id;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

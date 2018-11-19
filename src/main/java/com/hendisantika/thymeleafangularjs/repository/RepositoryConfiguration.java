@@ -19,9 +19,10 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguratio
 @Configuration
 public class RepositoryConfiguration extends RepositoryRestMvcConfiguration {
     @Override
-    protected void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
+    public RepositoryRestConfiguration config() {
+        RepositoryRestConfiguration config = super.config();
+        config.setBasePath("/rest");
         config.exposeIdsFor(City.class, Country.class);
-        config.setBaseUri("/rest");
-
+        return config;
     }
 }

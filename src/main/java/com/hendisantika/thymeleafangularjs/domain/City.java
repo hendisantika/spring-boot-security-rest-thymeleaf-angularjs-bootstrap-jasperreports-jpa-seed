@@ -1,9 +1,8 @@
 package com.hendisantika.thymeleafangularjs.domain;
 
-import org.springframework.data.annotation.Id;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import java.io.Serializable;
 

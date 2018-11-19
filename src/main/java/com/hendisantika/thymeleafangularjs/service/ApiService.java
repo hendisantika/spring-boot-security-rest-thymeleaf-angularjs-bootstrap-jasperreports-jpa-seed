@@ -6,8 +6,7 @@ import com.hendisantika.thymeleafangularjs.report.CustomJRDataSource;
 import com.hendisantika.thymeleafangularjs.repository.CityRepository;
 import com.hendisantika.thymeleafangularjs.repository.CountryRepository;
 import net.sf.jasperreports.engine.*;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -27,7 +26,7 @@ import java.util.List;
  */
 @Component
 public class ApiService {
-    private static final Logger logger = LogManager.getLogger(ApiService.class);
+    private static final Logger logger = Logger.getLogger(ApiService.class);
 
     @Autowired
     private CityRepository cityRepository;
